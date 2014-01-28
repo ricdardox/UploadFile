@@ -50,7 +50,11 @@ class Upload {
             return "ERROR";
         }
     }
-
+   /**
+     * permite personalizar los errores que se pueden presentar al momento de subir lso archivos al servidor
+     * @param Integer $code  es el codigo del error generado
+     * @return String retorna una cadena con el error personalizado
+     */
     public static function errorUpload($code) {
         $outPut = "NONE";
         switch ($code) {
